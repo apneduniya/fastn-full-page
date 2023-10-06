@@ -1,0 +1,102 @@
+-- import: apneduniya.github.io/fastn-full-page/components/feature-card
+
+
+-- component wrapper:
+ftd.type-data types: $fastn-quicksand-font.types
+
+
+-- ftd.container:
+id: contact
+height: fill-container
+width: fill-container
+
+-- ftd.desktop:
+
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+margin-vertical.px: 50
+padding-horizontal.px: 80
+;; background.solid: #f3f4fd
+spacing.fixed.px: 100
+align-content: center
+
+
+-- ftd.column:
+spacing.fixed.px: 36
+classes: wow, fadeInLeft
+
+-- ftd.text: Want to talk with us?
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+
+-- ftd.text: We are always ready to help you. You may contact us via email. We will reply you as soon as possible.
+role: $inherited.types.copy-regular
+width: fill-container
+color: #000000
+
+-- ftd.text: thatsmeadarshgupta@gmail.com
+role: $inherited.types.copy-regular
+width: fill-container
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $assets.files.assets.contact.webp
+height.fixed.px: 380
+width.fixed.px: 380
+classes: wow, fadeInRight
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+;; height: fill-container
+width: fill-container
+margin-vertical.px: 50
+padding-horizontal.px: 20
+;; background.solid: #f3f4fd
+spacing.fixed.px: 28
+align-content: center
+classes: wow, fadeInUp
+
+
+-- ftd.text: Want to talk with us?
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+
+-- ftd.text: We are always ready to help you. You may contact us via email. We will reply you as soon as possible.
+role: $inherited.types.copy-regular
+width: fill-container
+color: #000000
+
+-- ftd.text: thatsmeadarshgupta@gmail.com
+role: $inherited.types.copy-regular
+width: fill-container
+color: #000000
+
+-- ftd.image:
+src: $assets.files.assets.contact.webp
+margin-top.px: 30
+height.fixed.px: 300
+width.fixed.px: 300
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.container
+
+-- end: wrapper
+
+
+

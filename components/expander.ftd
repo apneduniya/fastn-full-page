@@ -1,0 +1,123 @@
+
+
+
+-- ftd.shadow faq-shadow:
+color: rgba(149, 157, 165, 0.2)
+x-offset.px: 0
+y-offset.px: 8
+blur.px: 24
+
+
+
+-- component wrapper:
+caption label:
+string description:
+boolean $show: false
+ftd.type-data types: $fastn-quicksand-font.types
+
+
+-- ftd.container:
+classes: wow, fadeInLeft
+
+-- ftd.desktop:
+
+-- ftd.column:
+max-width.fixed.px: 700
+width.fixed.px: 700
+background.solid: #F8F9FA
+border-width.px if { $wrapper.show }: 1
+border-width.px: 0
+border-color if { $wrapper.show }: #F8F9FA
+border-color: transparent
+background.solid if { $wrapper.show }: #ffffff
+;; background.solid: #ffffff
+border-radius.px: 7
+shadow: $faq-shadow
+
+-- ftd.row:
+id: $wrapper.label
+$on-click$: $ftd.toggle($a = $wrapper.show)
+width: fill-container
+padding-vertical.px: 12
+padding-horizontal.px: 16
+
+;; label
+-- ftd.text: $wrapper.label
+role: $inherited.types.heading-tiny
+
+-- ftd.image:
+src if { $wrapper.show }: $assets.files.assets.up-icon.svg
+src: $assets.files.assets.down-icon.svg
+width.fixed.px: 20
+height.fixed.px: 20
+anchor.id: $wrapper.label
+right.px: 20
+
+-- end: ftd.row
+
+;; description
+-- ftd.text: $wrapper.description
+if: { $wrapper.show }
+padding-vertical.px: 12
+padding-horizontal.px: 16
+color: #495057
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+max-width.fixed.px: 310
+width.fixed.px: 310
+background.solid: #F8F9FA
+border-width.px if { $wrapper.show }: 1
+border-width.px: 0
+border-color if { $wrapper.show }: #F8F9FA
+border-color: transparent
+background.solid if { $wrapper.show }: #ffffff
+;; background.solid: #ffffff
+border-radius.px: 7
+shadow: $faq-shadow
+
+-- ftd.row:
+id: $wrapper.label
+$on-click$: $ftd.toggle($a = $wrapper.show)
+width: fill-container
+padding-vertical.px: 12
+padding-horizontal.px: 16
+
+;; label
+-- ftd.text: $wrapper.label
+role: $inherited.types.heading-tiny
+
+
+-- ftd.image:
+src if { $wrapper.show }: $assets.files.assets.up-icon.svg
+src: $assets.files.assets.down-icon.svg
+width.fixed.px: 20
+height.fixed.px: 20
+anchor.id: $wrapper.label
+right.px: 20
+
+-- end: ftd.row
+
+;; description
+-- ftd.text: $wrapper.description
+if: { $wrapper.show }
+padding-vertical.px: 12
+padding-horizontal.px: 16
+color: #495057
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.container
+
+-- end: wrapper
