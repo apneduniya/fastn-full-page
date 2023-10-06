@@ -1,0 +1,74 @@
+
+
+;; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+-- ftd.shadow card-shadow:
+color: rgba(100, 100, 111, 0.2)
+x-offset.px: 0
+y-offset.px: 7
+blur.px: 29
+spread.px: 0
+
+;; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+-- ftd.shadow icon-shadow:
+color: rgba(149, 157, 165, 0.2)
+x-offset.px: 0
+y-offset.px: 8
+blur.px: 24
+
+
+-- component wrapper:
+string icon:
+string title:
+string description:
+ftd.type-data types: $fastn-quicksand-font.types
+
+-- ftd.column:
+height.fixed.px: 280
+width.fixed.px: 280
+background.solid: #fff
+padding.px: 24
+shadow: $card-shadow
+border-radius.px: 12
+classes: wow, fadeInUp
+spacing.fixed.px: 24
+
+
+-- ftd.image:
+src if {wrapper.icon == "plug"}: $assets.files.assets.features-icon-plug.svg
+src if {wrapper.icon == "tick"}: $assets.files.assets.features-icon-tick.svg
+src if {wrapper.icon == "customize"}: $assets.files.assets.features-icon-customize.svg
+src: $assets.files.assets.features-icon-plug.svg
+height.fixed.px: 80
+width.fixed.px: 80
+border-radius.px: 10 
+background.solid: #4031AA
+padding.px: 20
+align-self: center
+shadow: $icon-shadow
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+spacing.fixed.px: 10
+
+-- ftd.text: $wrapper.title
+role: $inherited.types.heading-tiny
+style: bold
+width: fill-container
+text-align: center
+
+-- ftd.text: $wrapper.description
+role: $inherited.types.copy-regular 
+width: fill-container
+;; text-align: center
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: wrapper
+
+
+

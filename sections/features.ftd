@@ -1,0 +1,114 @@
+-- import: apneduniya.github.io/fastn-full-page/components/feature-card
+
+
+-- component wrapper:
+ftd.type-data types: $fastn-quicksand-font.types
+
+
+-- ftd.container:
+id: features
+height: fill-container
+width: fill-container
+
+-- ftd.desktop:
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+margin-vertical.px: 50
+padding-horizontal.px: 80
+;; background.solid: #f3f4fd
+spacing.fixed.px: 100
+;; align-content: center
+
+-- ftd.text: Features
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+text-align: center
+classes: wow, fadeInDown
+
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+spacing: space-around
+
+
+-- feature-card.wrapper:
+icon: plug
+title: Easy to integrate
+description: You can use it as a standalone website or integrate it with your existing website.
+
+-- feature-card.wrapper:
+icon: tick
+title: Everything is covered
+description: Everything is on us, you don't have to worry about anything.
+
+-- feature-card.wrapper:
+icon: customize
+title: Easy to customize
+description: You can customize it to your liking and make it your own.
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+margin-vertical.px: 100
+padding-horizontal.px: 20
+;; background.solid: #f3f4fd
+spacing.fixed.px: 40
+;; align-content: center
+
+-- ftd.text: Features
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+text-align: center
+classes: wow, fadeInDown
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+spacing: space-around
+align-content: center
+
+
+-- feature-card.wrapper:
+icon: plug
+title: Easy to integrate
+description: You can use it as a standalone website or integrate it with your existing website.
+
+-- feature-card.wrapper:
+icon: tick
+title: Everything is covered
+description: Everything is on us, you don't have to worry about anything.
+
+-- feature-card.wrapper:
+icon: customize
+title: Easy to customize
+description: You can customize it to your liking and make it your own.
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.container
+
+-- end: wrapper
+
+
+

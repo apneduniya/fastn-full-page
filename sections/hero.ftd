@@ -1,0 +1,100 @@
+
+
+
+-- component wrapper:
+ftd.type-data types: $fastn-quicksand-font.types
+
+
+-- ftd.container:
+id: hero
+height: fill-container
+width: fill-container
+
+
+-- ftd.desktop:
+
+-- ftd.row:
+height.fixed.vh: 100
+width: fill-container
+margin-top.px: -50
+padding-vertical.px: 0
+padding-horizontal.px: 80
+;; background.solid: #f3f4fd
+spacing: space-between
+align-content: center
+
+
+-- ftd.column:
+spacing.fixed.px: 20
+width.fixed.px: 600
+classes: wow, fadeInUp
+
+-- ftd.text: A personal chatbot for your product
+role: $inherited.types.heading-hero
+
+
+-- ftd.text: Understand your users, and help them succeed with a personal chatbot for your product.
+role: $inherited.types.copy-regular
+color: #6c6f8a
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $assets.files.assets.hero.png
+height.fixed.px: 500
+width.fixed.px: 280
+;; classes: animate__animated, animate__backInRight, animate__slow
+classes: wow, fadeInRight
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+margin-vertical.px: 60
+padding-vertical.px: 10
+padding-horizontal.px: 20
+;; background.solid: #f3f4fd
+spacing.fixed.px: 40
+align-content: center
+
+
+-- ftd.column:
+spacing.fixed.px: 20
+;; width.fixed.px: 300
+classes: wow, fadeInUp
+
+
+-- ftd.text: A personal chatbot for your product
+role: $inherited.types.heading-large
+
+
+-- ftd.text: Understand your users, and help them succeed with a personal chatbot for your product.
+role: $inherited.types.copy-regular
+color: #6c6f8a
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $assets.files.assets.hero.png
+height.fixed.px: 420
+width.fixed.px: 230
+classes: wow, fadeInRight
+
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+
+-- end: ftd.container
+
+-- end: wrapper
+
+

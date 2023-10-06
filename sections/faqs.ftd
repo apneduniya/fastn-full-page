@@ -1,0 +1,107 @@
+-- import: apneduniya.github.io/fastn-full-page/components/expander
+
+
+-- component wrapper:
+ftd.type-data types: $fastn-quicksand-font.types
+
+
+-- ftd.container:
+id: faqs
+height: fill-container
+width: fill-container
+
+-- ftd.desktop:
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+margin-vertical.px: 50
+padding-horizontal.px: 80
+;; background.solid: #f3f4fd
+spacing.fixed.px: 50
+align-content: center
+
+-- ftd.text: FAQs
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+text-align: center
+classes: wow, fadeInDown
+
+
+-- ftd.column:
+height: fill-container
+width: fill-container
+align-content: center
+spacing.fixed.px: 40
+
+
+-- expander.wrapper: What is Doc Master?
+description: Doc Master is a one-stop solution for all your documentation needs. It is a platform that allows you to create, edit, and publish chatbot for documentation in a hassle-free manner. It is a simple, yet powerful tool.
+
+-- expander.wrapper: Why Doc Master?
+description: We believe that documentation is an integral part of any product. It is the first point of contact for any user. We also believe that documentation should be easy to create and maintain. Doc Master is a tool that helps you create and maintain documentation in a simple and easy way.
+
+-- expander.wrapper: How do I get started with Doc Master?
+description: Currently, Doc Master is in beta. You can sign up for the beta program by filling out the form below. We will send you an email with instructions on how to get started with Doc Master.
+
+-- expander.wrapper: How much time does it take to get started with Doc Master?
+description: It takes less than 5 minutes to get started with Doc Master after you get approved for the beta program.
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+
+-- ftd.mobile:
+
+
+-- ftd.column:
+;; height: fill-container
+width: fill-container
+margin-vertical.px: 150
+padding-horizontal.px: 20
+;; background.solid: #f3f4fd
+spacing.fixed.px: 40
+;; align-content: center
+
+-- ftd.text: FAQs
+role: $inherited.types.heading-large
+width: fill-container
+color: #4031AA
+text-align: center
+classes: wow, fadeInDown
+
+-- ftd.column:
+;; height: fill-container
+width: fill-container
+align-content: center
+spacing.fixed.px: 34
+
+-- expander.wrapper: What is Doc Master?
+description: Doc Master is a one-stop solution for all your documentation needs. It is a platform that allows you to create, edit, and publish chatbot for documentation in a hassle-free manner. It is a simple, yet powerful tool.
+
+-- expander.wrapper: Why Doc Master?
+description: We believe that documentation is an integral part of any product. It is the first point of contact for any user. We also believe that documentation should be easy to create and maintain. Doc Master is a tool that helps you create and maintain documentation in a simple and easy way.
+
+-- expander.wrapper: How do I get started with Doc Master?
+description: Currently, Doc Master is in beta. You can sign up for the beta program by filling out the form below. We will send you an email with instructions on how to get started with Doc Master.
+
+-- expander.wrapper: How much time does it take to get started with Doc Master?
+description: It takes less than 5 minutes to get started with Doc Master after you get approved for the beta program.
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.container
+
+-- end: wrapper
+
+
+
