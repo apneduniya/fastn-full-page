@@ -40,11 +40,11 @@ link-1: #hero
 navlink-2: Features
 link-2: #features
 navlink-3: About
-link-3: /about
+link-3: about/
 navlink-4: FAQs
 link-4: #faqs
 navlink-5: Contact
-link-5: /contact
+link-5: contact/
 theme: light
 
 
