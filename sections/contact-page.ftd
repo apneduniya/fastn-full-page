@@ -21,7 +21,7 @@ boolean $on-click:
 width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 20
-spacing.fixed.px: 32
+;; spacing.fixed.px: 32
 align-content: center
 classes: wow, fadeInUp
 
@@ -31,6 +31,7 @@ role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
 text-align: center
+margin-bottom.px: 32
 
 ;; Form
 -- ftd.column:
