@@ -3,6 +3,10 @@
 
 -- ds.page:
 
--- about.wrapper:
+-- about.wrapper: Who are we?
+image: $assets.files.assets.sitting.png
+
+We are a small team of developers who are passionate about AI and ML. We are
+working on some projects which will help the lifestyle of people.
 
 -- end: ds.page
