@@ -1,9 +1,6 @@
 -- import: apneduniya.github.io/fastn-blog/components/navbar
 -- import: apneduniya.github.io/fastn-blog/components/footer
--- import: apneduniya.github.io/fastn-full-page/sections/hero
--- import: apneduniya.github.io/fastn-full-page/sections/features
--- import: apneduniya.github.io/fastn-full-page/sections/faqs
--- import: apneduniya.github.io/fastn-full-page/sections/contact
+-- import: apneduniya.github.io/fastn-full-page/sections/contact-page
 -- import: apneduniya.github.io/fastn-full-page/utils/animation
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 
@@ -12,13 +9,19 @@
 
 -- animation.load:
 
+-- string $name: Null
+-- string $email: Null
+-- string $contact: Null
+-- string $message: Null
+-- boolean $on-click: false
+
 
 ;; Main page
 -- ftd.column:
-id: main-page
-types: $fastn-quicksand-font.types
+;; id: about
 ;; height: fill-container
 width: fill-container
+types: $fastn-quicksand-font.types
 ;; background.solid: #f3f4fd
 background.solid: $inherited.colors.background.base
 z-index: 0
@@ -55,13 +58,23 @@ link-5: /contact
 theme: light
 
 
--- hero.wrapper:
+-- ftd.text: It was a demo form so the data is not stored anywhere. If you want to contact us then you can mail us at thatsmeadarshgupta@gmail.com
+if: { $on-click }
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+height.fixed.vh: 100
+width: fill-container
+text-align: center
 
--- features.wrapper:
 
--- faqs.wrapper:
+-- contact-page.wrapper:
+if: { !$on-click }
+$name: $name
+$email: $email
+$contact: $contact
+$message: $message
+$on-click: $on-click
 
--- contact.wrapper:
 
 -- footer.wrapper:
 copywrite: @2023 Doc Master

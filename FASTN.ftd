@@ -11,6 +11,8 @@ favicon: /-/apneduniya.github.io/fastn-full-page/favicon.ico
 -- fastn.dependency: apneduniya.github.io/fastn-blog
 -- fastn.dependency: apneduniya.github.io/fastn-quicksand-font
 
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+
 -- fastn.auto-import: apneduniya.github.io/fastn-full-page/FASTN/ds
 -- fastn.auto-import: apneduniya.github.io/fastn-full-page/assets
 -- fastn.auto-import: doc-site
@@ -21,4 +23,10 @@ favicon: /-/apneduniya.github.io/fastn-full-page/favicon.ico
 
 # Home: index.html
 
-- Right Sidebar Sample: /sidebar/
+- About: /about/
+document: /pages/about.ftd
+
+- Contact: /contact/
+document: /pages/contact.ftd
+
+;; - Right Sidebar Sample: /sidebar/

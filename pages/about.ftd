@@ -1,9 +1,6 @@
 -- import: apneduniya.github.io/fastn-blog/components/navbar
 -- import: apneduniya.github.io/fastn-blog/components/footer
--- import: apneduniya.github.io/fastn-full-page/sections/hero
--- import: apneduniya.github.io/fastn-full-page/sections/features
--- import: apneduniya.github.io/fastn-full-page/sections/faqs
--- import: apneduniya.github.io/fastn-full-page/sections/contact
+-- import: apneduniya.github.io/fastn-full-page/sections/about
 -- import: apneduniya.github.io/fastn-full-page/utils/animation
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 
@@ -15,9 +12,9 @@
 
 ;; Main page
 -- ftd.column:
-id: main-page
-types: $fastn-quicksand-font.types
+;; id: about
 ;; height: fill-container
+types: $fastn-quicksand-font.types
 width: fill-container
 ;; background.solid: #f3f4fd
 background.solid: $inherited.colors.background.base
@@ -55,13 +52,7 @@ link-5: /contact
 theme: light
 
 
--- hero.wrapper:
-
--- features.wrapper:
-
--- faqs.wrapper:
-
--- contact.wrapper:
+-- about.wrapper:
 
 -- footer.wrapper:
 copywrite: @2023 Doc Master

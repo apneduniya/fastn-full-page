@@ -1,6 +1,24 @@
+;; -- load:
+
+-- ftd.text: Working
+
+-- component load:
+optional string overflow-x: hidden
+optional string smooth-scroll: true
+optional integer x: $start(overflowX = $load.overflow-x, smoothScroll = $load.smooth-scroll)
+
+-- ftd.column:
 
 
--- web-component load:
-js: function.js
+
+-- end: ftd.column
 
 -- end: load
+
+
+-- optional integer start(overflowX, smoothScroll):
+optional string overflowX:
+optional string smoothScroll:
+js: $assets.files.function.js
+
+load(overflowX, smoothScroll)
