@@ -25,13 +25,14 @@ align-content: center
 
 
 -- ftd.column:
-spacing.fixed.px: 36
+;; spacing.fixed.px: 36
 classes: wow, fadeInLeft
 
 -- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
+margin-bottom.px: 36
 
 -- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
@@ -61,7 +62,7 @@ width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 20
 ;; background.solid: #f3f4fd
-spacing.fixed.px: 28
+;; spacing.fixed.px: 28
 align-content: center
 classes: wow, fadeInUp
 
@@ -70,6 +71,7 @@ classes: wow, fadeInUp
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
+margin-bottom.px: 28
 
 -- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
