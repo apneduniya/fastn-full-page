@@ -2,6 +2,9 @@
 
 
 -- component wrapper:
+caption title:
+optional body subtitle:
+ftd.image-src image:
 
 -- ftd.container:
 ;; id: about
@@ -25,12 +28,12 @@ align-content: center
 spacing.fixed.px: 36
 classes: wow, fadeInLeft
 
--- ftd.text: Who are we?
+-- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
 
--- ftd.text: We are a small team of developers who are passionate about AI and ML. We are working on some projects which will help the lifestyle of people.
+-- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
@@ -39,7 +42,7 @@ color: $inherited.colors.text-strong
 -- end: ftd.column
 
 -- ftd.image:
-src: $assets.files.assets.sitting.png
+src: $wrapper.image
 height.fixed.px: 380
 width.fixed.px: 380
 classes: wow, fadeInRight
@@ -63,19 +66,19 @@ align-content: center
 classes: wow, fadeInUp
 
 
--- ftd.text: Who are we?
+-- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
 
--- ftd.text: We are a small team of developers who are passionate about AI and ML. We are working on some projects which will help the lifestyle of people.
+-- ftd.text: $wrapper.subtitle
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
 color: $inherited.colors.text-strong
 
 -- ftd.image:
-src: $assets.files.assets.sitting.png
+src: $wrapper.image
 margin-top.px: 30
 height.fixed.px: 300
 width.fixed.px: 300
