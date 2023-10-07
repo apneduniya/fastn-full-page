@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: FranzDiebold/github-env-vars-action@v2
-      - run: sh -c "$(curl -fsSL https://fastn.com/install.sh)"
+      - run: source <(curl -fsSL https://fastn.com/install.sh) --version=0.3.70
       - name: Build the pages with fastn
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
