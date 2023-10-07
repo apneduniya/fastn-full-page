@@ -26,6 +26,7 @@ spacing.fixed.px: 100
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
+;; color: $inherited.colors.text-strong
 text-align: center
 classes: wow, fadeInDown
 

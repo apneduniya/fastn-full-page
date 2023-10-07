@@ -31,6 +31,7 @@ classes: wow, fadeInUp
 
 -- ftd.text: A personal chatbot for your product
 role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
 
 
 -- ftd.text: Understand your users, and help them succeed with a personal chatbot for your product.
@@ -43,7 +44,6 @@ color: #6c6f8a
 src: $assets.files.assets.hero.png
 height.fixed.px: 500
 width.fixed.px: 280
-;; classes: animate__animated, animate__backInRight, animate__slow
 classes: wow, fadeInRight
 
 -- end: ftd.row
@@ -73,6 +73,7 @@ classes: wow, fadeInUp
 
 -- ftd.text: A personal chatbot for your product
 role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
 
 
 -- ftd.text: Understand your users, and help them succeed with a personal chatbot for your product.
