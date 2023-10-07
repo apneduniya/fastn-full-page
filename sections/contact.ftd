@@ -2,8 +2,6 @@
 
 
 -- component wrapper:
-ftd.type-data types: $fastn-quicksand-font.types
-
 
 -- ftd.container:
 id: contact
@@ -99,6 +97,3 @@ width.fixed.px: 300
 -- end: ftd.container
 
 -- end: wrapper
-
-
-

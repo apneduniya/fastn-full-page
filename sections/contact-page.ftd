@@ -9,25 +9,17 @@ blur.px: 12
 
 
 -- component wrapper:
-string $name:
-string $email:
-string $contact:  
-string $message:
+optional string $name:
+optional string $email:
+optional string $contact:
+optional string $message:
 boolean $on-click:
-ftd.type-data types: $fastn-quicksand-font.types
 
-
--- ftd.container:
-;; id: about
-height: fill-container
-width: fill-container
 
 -- ftd.column:
-;; height: fill-container
 width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 20
-;; background.solid: #f3f4fd
 spacing.fixed.px: 32
 align-content: center
 classes: wow, fadeInUp
@@ -131,9 +123,5 @@ role: $inherited.types.source-code
 
 -- end: ftd.column
 
--- end: ftd.container
 
 -- end: wrapper
-
-
-

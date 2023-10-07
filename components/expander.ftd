@@ -13,7 +13,6 @@ blur.px: 24
 caption label:
 string description:
 boolean $show: false
-ftd.type-data types: $fastn-quicksand-font.types
 
 
 -- ftd.container:
