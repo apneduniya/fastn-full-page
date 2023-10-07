@@ -8,12 +8,19 @@
 
 -- ds.page:
 
--- hero.wrapper:
+-- hero.wrapper: A personal chatbot for your product
+image: $assets.files.assets.hero.png
+
+Understand your users, and help them succeed with a personal chatbot for your product.
 
 -- features.wrapper:
 
 -- faqs.wrapper:
 
--- contact.wrapper:
+-- contact.wrapper: Want to talk with us?
+email: thatsmeadarshgupta@gmail.com
+image: $assets.files.assets.contact.webp
+
+We are always ready to help you. You may contact us via email. We will reply you as soon as possible.
 
 -- end: ds.page

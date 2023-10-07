@@ -2,6 +2,9 @@
 
 
 -- component wrapper:
+caption title:
+optional body subtitle:
+ftd.image-src image:
 
 -- ftd.container:
 id: hero
@@ -25,19 +28,20 @@ align-content: center
 width.fixed.px: 600
 classes: wow, fadeInUp
 
--- ftd.text: A personal chatbot for your product
+-- ftd.text: $wrapper.title
 role: $inherited.types.heading-hero
 color: $inherited.colors.text-strong
 margin-bottom.px: 20
 
--- ftd.text: Understand your users, and help them succeed with a personal chatbot for your product.
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
 role: $inherited.types.copy-regular
 color: #6c6f8a
 
 -- end: ftd.column
 
 -- ftd.image:
-src: $assets.files.assets.hero.png
+src: $wrapper.image
 height.fixed.px: 500
 width.fixed.px: 280
 classes: wow, fadeInRight
@@ -62,24 +66,25 @@ align-content: center
 
 
 -- ftd.column:
-spacing.fixed.px: 20
 ;; width.fixed.px: 300
 classes: wow, fadeInUp
 
 
--- ftd.text: A personal chatbot for your product
+-- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+margin-bottom.px: 20
 
 
--- ftd.text: Understand your users, and help them succeed with a personal chatbot for your product.
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
 role: $inherited.types.copy-regular
 color: #6c6f8a
 
 -- end: ftd.column
 
 -- ftd.image:
-src: $assets.files.assets.hero.png
+src: $wrapper.image
 height.fixed.px: 420
 width.fixed.px: 230
 classes: wow, fadeInRight

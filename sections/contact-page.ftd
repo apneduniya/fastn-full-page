@@ -9,6 +9,7 @@ blur.px: 12
 
 
 -- component wrapper:
+caption title:
 optional string $name:
 optional string $email:
 optional string $contact:
@@ -25,7 +26,7 @@ align-content: center
 classes: wow, fadeInUp
 
 
--- ftd.text: Let's have a talk
+-- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
