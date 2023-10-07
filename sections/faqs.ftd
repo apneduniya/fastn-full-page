@@ -2,8 +2,6 @@
 
 
 -- component wrapper:
-ftd.type-data types: $fastn-quicksand-font.types
-
 
 -- ftd.container:
 id: faqs
@@ -102,6 +100,3 @@ description: It takes less than 5 minutes to get started with Doc Master after y
 -- end: ftd.container
 
 -- end: wrapper
-
-
-

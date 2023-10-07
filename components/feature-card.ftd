@@ -20,17 +20,21 @@ blur.px: 24
 string icon:
 string title:
 string description:
-ftd.type-data types: $fastn-quicksand-font.types
 
 -- ftd.column:
+classes: wow, fadeInUp
 height.fixed.px: 280
 width.fixed.px: 280
+
+-- ftd.column:
+height: fill-container
+width: fill-container
 background.solid: #fff
 padding.px: 24
 shadow: $card-shadow
 border-radius.px: 12
-classes: wow, fadeInUp
 spacing.fixed.px: 24
+align-content: center
 
 
 -- ftd.image:
@@ -43,7 +47,6 @@ width.fixed.px: 80
 border-radius.px: 10 
 background.solid: #4031AA
 padding.px: 20
-align-self: center
 shadow: $icon-shadow
 
 
@@ -64,11 +67,8 @@ width: fill-container
 ;; text-align: center
 
 -- end: ftd.column
-
+-- end: ftd.column
 
 -- end: ftd.column
 
 -- end: wrapper
-
-
-

@@ -4,82 +4,29 @@
 -- import: apneduniya.github.io/fastn-full-page/utils/animation
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 
--- dms.dark-mode-switcher-float:
 
-
--- animation.load:
-
--- string $name: Null
--- string $email: Null
--- string $contact: Null
--- string $message: Null
+-- optional string $name:
+-- optional string $email:
+-- optional string $contact:
+-- optional string $message:
 -- boolean $on-click: false
 
-
-;; Main page
--- ftd.column:
-;; id: about
-;; height: fill-container
-width: fill-container
-types: $fastn-quicksand-font.types
-;; background.solid: #f3f4fd
-background.solid: $inherited.colors.background.base
-z-index: 0
-
-
-;; Background image
--- ftd.image:
-fit: cover
-opacity: 0.044
-src: $assets.files.assets.bg.svg
-;; src: https://www.django-rest-framework.org/img/grid.png
-height: fill-container
-width: fill-container
-;; anchor.id: main-page
-anchor: window
-top.px: 0
-left.px: 0
-z-index: -1
-
-
--- navbar.wrapper:
-title: Doc Master
-title-link: #hero
-navlink-1: Home
-link-1: #hero
-navlink-2: Features
-link-2: #features
-navlink-3: About
-link-3: /about
-navlink-4: FAQs
-link-4: #faqs
-navlink-5: Contact
-link-5: /contact
-theme: light
-
+-- ds.page:
 
 -- ftd.text: It was a demo form so the data is not stored anywhere. If you want to contact us then you can mail us at thatsmeadarshgupta@gmail.com
-if: { $on-click }
+if: { on-click }
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 height.fixed.vh: 100
 width: fill-container
 text-align: center
 
-
 -- contact-page.wrapper:
-if: { !$on-click }
+if: { !on-click }
 $name: $name
 $email: $email
 $contact: $contact
 $message: $message
 $on-click: $on-click
 
-
--- footer.wrapper:
-copywrite: @2023 Doc Master
-
-
--- end: ftd.column
-;; E N D  O F  M A I N  P A G E
-
+-- end: ds.page

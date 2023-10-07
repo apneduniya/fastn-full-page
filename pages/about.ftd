@@ -1,63 +1,8 @@
--- import: apneduniya.github.io/fastn-blog/components/navbar
--- import: apneduniya.github.io/fastn-blog/components/footer
 -- import: apneduniya.github.io/fastn-full-page/sections/about
--- import: apneduniya.github.io/fastn-full-page/utils/animation
--- import: fastn-community.github.io/dark-mode-switcher as dms
-
--- dms.dark-mode-switcher-float:
 
 
--- animation.load:
-
-
-;; Main page
--- ftd.column:
-;; id: about
-;; height: fill-container
-types: $fastn-quicksand-font.types
-width: fill-container
-;; background.solid: #f3f4fd
-background.solid: $inherited.colors.background.base
-z-index: 0
-
-
-;; Background image
--- ftd.image:
-fit: cover
-opacity: 0.044
-src: $assets.files.assets.bg.svg
-;; src: https://www.django-rest-framework.org/img/grid.png
-height: fill-container
-width: fill-container
-;; anchor.id: main-page
-anchor: window
-top.px: 0
-left.px: 0
-z-index: -1
-
-
--- navbar.wrapper:
-title: Doc Master
-title-link: #hero
-navlink-1: Home
-link-1: #hero
-navlink-2: Features
-link-2: #features
-navlink-3: About
-link-3: /about
-navlink-4: FAQs
-link-4: #faqs
-navlink-5: Contact
-link-5: /contact
-theme: light
-
+-- ds.page:
 
 -- about.wrapper:
 
--- footer.wrapper:
-copywrite: @2023 Doc Master
-
-
--- end: ftd.column
-;; E N D  O F  M A I N  P A G E
-
+-- end: ds.page

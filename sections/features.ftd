@@ -2,8 +2,6 @@
 
 
 -- component wrapper:
-ftd.type-data types: $fastn-quicksand-font.types
-
 
 -- ftd.container:
 id: features
@@ -110,6 +108,3 @@ description: You can customize it to your liking and make it your own.
 -- end: ftd.container
 
 -- end: wrapper
-
-
-

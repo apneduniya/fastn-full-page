@@ -2,14 +2,11 @@
 
 
 -- component wrapper:
-ftd.type-data types: $fastn-quicksand-font.types
-
 
 -- ftd.container:
 id: hero
 height: fill-container
 width: fill-container
-
 
 -- ftd.desktop:
 
@@ -25,14 +22,13 @@ align-content: center
 
 
 -- ftd.column:
-spacing.fixed.px: 20
 width.fixed.px: 600
 classes: wow, fadeInUp
 
 -- ftd.text: A personal chatbot for your product
 role: $inherited.types.heading-hero
 color: $inherited.colors.text-strong
-
+margin-bottom.px: 20
 
 -- ftd.text: Understand your users, and help them succeed with a personal chatbot for your product.
 role: $inherited.types.copy-regular
@@ -97,5 +93,3 @@ classes: wow, fadeInRight
 -- end: ftd.container
 
 -- end: wrapper
-
-
