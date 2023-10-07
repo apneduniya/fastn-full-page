@@ -23,6 +23,7 @@ text-align: center
 
 -- contact-page.wrapper:
 if: { !on-click }
+title: Let's have a talk
 $name: $name
 $email: $email
 $contact: $contact

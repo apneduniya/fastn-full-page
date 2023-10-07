@@ -2,6 +2,10 @@
 
 
 -- component wrapper:
+caption title:
+optional body subtitle:
+optional string email:
+ftd.image-src image:
 
 -- ftd.container:
 id: contact
@@ -22,29 +26,33 @@ align-content: center
 
 
 -- ftd.column:
-spacing.fixed.px: 36
 classes: wow, fadeInLeft
 
--- ftd.text: Want to talk with us?
+-- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
+margin-bottom.px: 36
 
--- ftd.text: We are always ready to help you. You may contact us via email. We will reply you as soon as possible.
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
 color: $inherited.colors.text-strong
+margin-bottom.px: 36
 
--- ftd.text: thatsmeadarshgupta@gmail.com
+-- ftd.text: $wrapper.email
+if: { $wrapper.email != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
+margin-bottom.px: 36
 
 -- end: ftd.column
 
 -- ftd.image:
-src: $assets.files.assets.contact.webp
+src: $wrapper.image
 height.fixed.px: 380
 width.fixed.px: 380
 classes: wow, fadeInRight
@@ -63,29 +71,33 @@ width: fill-container
 margin-vertical.px: 50
 padding-horizontal.px: 20
 ;; background.solid: #f3f4fd
-spacing.fixed.px: 28
 align-content: center
 classes: wow, fadeInUp
 
 
--- ftd.text: Want to talk with us?
+-- ftd.text: $wrapper.title
 role: $inherited.types.heading-large
 width: fill-container
 color: #4031AA
+margin-bottom.px: 28
 
--- ftd.text: We are always ready to help you. You may contact us via email. We will reply you as soon as possible.
+-- ftd.text: $wrapper.subtitle
+if: { $wrapper.subtitle != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
 color: $inherited.colors.text-strong
+margin-bottom.px: 28
 
--- ftd.text: thatsmeadarshgupta@gmail.com
+-- ftd.text: $wrapper.email
+if: { $wrapper.email != NULL }
 role: $inherited.types.copy-regular
 width: fill-container
 ;; color: #000000
+margin-bottom.px: 28
 
 -- ftd.image:
-src: $assets.files.assets.contact.webp
+src: $wrapper.image
 margin-top.px: 30
 height.fixed.px: 300
 width.fixed.px: 300
