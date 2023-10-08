@@ -7,6 +7,9 @@
 
 -- component page:
 children uis:
+optional string overflow-x: hidden
+optional string smooth-scroll: true
+optional integer x: $animation.start(overflowX = $page.overflow-x, smoothScroll = $page.smooth-scroll)
 
 -- ftd.column:
 types: $fastn-quicksand-font.types
@@ -15,7 +18,6 @@ width: fill-container
 background.solid: $inherited.colors.background.base
 z-index: 0
 
--- animation.load:
 -- dms.dark-mode-switcher-float:
 
 
