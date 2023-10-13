@@ -8,7 +8,7 @@
 -- component page:
 children uis:
 optional string overflow-x: hidden
-optional string smooth-scroll: true
+optional string smooth-scroll: smooth
 optional integer x: $animation.start(overflowX = $page.overflow-x, smoothScroll = $page.smooth-scroll)
 
 -- ftd.column:
