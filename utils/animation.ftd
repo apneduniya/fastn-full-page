@@ -1,3 +1,20 @@
+
+
+-- component load:
+optional string overflow-x: hidden
+optional string smooth-scroll: true
+optional integer x: $start(overflowX = $load.overflow-x, smoothScroll = $load.smooth-scroll)
+
+-- ftd.column:
+
+
+
+-- end: ftd.column
+
+-- end: load
+
+
+
 -- optional integer start(overflowX, smoothScroll):
 optional string overflowX:
 optional string smoothScroll:
