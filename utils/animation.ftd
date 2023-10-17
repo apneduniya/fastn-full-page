@@ -7,7 +7,7 @@ optional integer x: $start(overflowX = $load.overflow-x, smoothScroll = $load.sm
 
 -- ftd.column:
 
--- ftd.text : Working
+;; -- ftd.text : Working
 
 -- end: ftd.column
 
